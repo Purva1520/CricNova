@@ -1,0 +1,349 @@
+{
+  "dataset_summary": {
+    "total_matches": 752,
+    "total_deliveries": 178610,
+    "pre_match_samples": 752,
+    "live_chase_samples": 13331,
+    "score_samples": 11130,
+    "seasons": [
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019
+    ]
+  },
+  "pre_match_benchmarks": [
+    {
+      "model_name": "Logistic Regression",
+      "accuracy": 0.5546,
+      "precision": 0.375,
+      "recall": 0.0588,
+      "f1": 0.1017,
+      "roc_auc": 0.5433,
+      "confusion_matrix": [
+        [
+          63,
+          5
+        ],
+        [
+          48,
+          3
+        ]
+      ]
+    },
+    {
+      "model_name": "Random Forest",
+      "accuracy": 0.5714,
+      "precision": 0.5,
+      "recall": 0.2941,
+      "f1": 0.3704,
+      "roc_auc": 0.5242,
+      "confusion_matrix": [
+        [
+          53,
+          15
+        ],
+        [
+          36,
+          15
+        ]
+      ]
+    },
+    {
+      "model_name": "XGBoost",
+      "accuracy": 0.4958,
+      "precision": 0.3636,
+      "recall": 0.2353,
+      "f1": 0.2857,
+      "roc_auc": 0.4986,
+      "confusion_matrix": [
+        [
+          47,
+          21
+        ],
+        [
+          39,
+          12
+        ]
+      ]
+    }
+  ],
+  "best_pre_match": {
+    "name": "Logistic Regression",
+    "accuracy": 0.5546,
+    "roc_auc": 0.5433,
+    "confusion_matrix": [
+      [
+        63,
+        5
+      ],
+      [
+        48,
+        3
+      ]
+    ],
+    "feature_importances": [
+      {
+        "feature": "t2_win_pct",
+        "importance": 22.41
+      },
+      {
+        "feature": "t1_bat_avg",
+        "importance": 15.5
+      },
+      {
+        "feature": "venue_chase_win_pct",
+        "importance": 14.42
+      },
+      {
+        "feature": "t2_bat_avg",
+        "importance": 10.07
+      },
+      {
+        "feature": "t2_form5",
+        "importance": 6.55
+      },
+      {
+        "feature": "venue_avg_1st_inns",
+        "importance": 5.69
+      },
+      {
+        "feature": "t1_win_pct",
+        "importance": 5.49
+      },
+      {
+        "feature": "t1_form5",
+        "importance": 3.64
+      },
+      {
+        "feature": "toss_won_by_t1",
+        "importance": 3.52
+      },
+      {
+        "feature": "toss_is_bat",
+        "importance": 3.52
+      },
+      {
+        "feature": "t2_bowl_w",
+        "importance": 3.36
+      },
+      {
+        "feature": "t1_bowl_w",
+        "importance": 3.15
+      },
+      {
+        "feature": "t1_h2h_win_pct",
+        "importance": 2.69
+      }
+    ]
+  },
+  "live_chase_benchmarks": [
+    {
+      "model_name": "Logistic Regression",
+      "accuracy": 0.718,
+      "precision": 0.7886,
+      "recall": 0.696,
+      "f1": 0.7394,
+      "roc_auc": 0.825,
+      "confusion_matrix": [
+        [
+          848,
+          286
+        ],
+        [
+          466,
+          1067
+        ]
+      ]
+    },
+    {
+      "model_name": "Random Forest",
+      "accuracy": 0.709,
+      "precision": 0.7827,
+      "recall": 0.6836,
+      "f1": 0.7298,
+      "roc_auc": 0.8217,
+      "confusion_matrix": [
+        [
+          843,
+          291
+        ],
+        [
+          485,
+          1048
+        ]
+      ]
+    },
+    {
+      "model_name": "XGBoost",
+      "accuracy": 0.706,
+      "precision": 0.7708,
+      "recall": 0.6954,
+      "f1": 0.7311,
+      "roc_auc": 0.7973,
+      "confusion_matrix": [
+        [
+          817,
+          317
+        ],
+        [
+          467,
+          1066
+        ]
+      ]
+    }
+  ],
+  "best_live_chase": {
+    "name": "Logistic Regression",
+    "accuracy": 0.718,
+    "roc_auc": 0.825,
+    "confusion_matrix": [
+      [
+        848,
+        286
+      ],
+      [
+        466,
+        1067
+      ]
+    ],
+    "feature_importances": [
+      {
+        "feature": "rrr",
+        "importance": 15.86
+      },
+      {
+        "feature": "current_score",
+        "importance": 13.49
+      },
+      {
+        "feature": "run_rate_diff",
+        "importance": 13.48
+      },
+      {
+        "feature": "runs_required",
+        "importance": 13.28
+      },
+      {
+        "feature": "pressure_factor",
+        "importance": 8.56
+      },
+      {
+        "feature": "wickets",
+        "importance": 7.67
+      },
+      {
+        "feature": "wickets_remaining",
+        "importance": 7.67
+      },
+      {
+        "feature": "overs",
+        "importance": 4.03
+      },
+      {
+        "feature": "balls_remaining",
+        "importance": 4.03
+      },
+      {
+        "feature": "crr",
+        "importance": 3.68
+      },
+      {
+        "feature": "is_death",
+        "importance": 2.06
+      },
+      {
+        "feature": "last_5_overs_runs",
+        "importance": 1.87
+      },
+      {
+        "feature": "momentum_score",
+        "importance": 1.81
+      },
+      {
+        "feature": "target",
+        "importance": 1.32
+      },
+      {
+        "feature": "is_powerplay",
+        "importance": 1.19
+      }
+    ]
+  },
+  "score_benchmarks": [
+    {
+      "model_name": "Random Forest Regressor",
+      "mae": 16.31,
+      "rmse": 22.23,
+      "r2": 0.3949,
+      "residual_std": 21.09
+    },
+    {
+      "model_name": "Gradient Boosting Regressor",
+      "mae": 16.05,
+      "rmse": 22.02,
+      "r2": 0.4062,
+      "residual_std": 20.85
+    },
+    {
+      "model_name": "XGBoost Regressor",
+      "mae": 16.16,
+      "rmse": 22.14,
+      "r2": 0.3997,
+      "residual_std": 21.01
+    }
+  ],
+  "best_score": {
+    "name": "Gradient Boosting Regressor",
+    "rmse": 22.02,
+    "mae": 16.05,
+    "r2": 0.4062,
+    "residual_std": 20.85,
+    "feature_importances": [
+      {
+        "feature": "crr",
+        "importance": 76.0
+      },
+      {
+        "feature": "wickets",
+        "importance": 15.3
+      },
+      {
+        "feature": "current_score",
+        "importance": 5.63
+      },
+      {
+        "feature": "last_5_overs_runs",
+        "importance": 1.41
+      },
+      {
+        "feature": "balls_remaining",
+        "importance": 0.96
+      },
+      {
+        "feature": "overs",
+        "importance": 0.56
+      },
+      {
+        "feature": "is_middle",
+        "importance": 0.11
+      },
+      {
+        "feature": "is_powerplay",
+        "importance": 0.02
+      },
+      {
+        "feature": "is_death",
+        "importance": 0.01
+      }
+    ]
+  }
+}
